@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { LatestPost } from "~/app/_components/post";
+import { TonConnectButton } from "~/app/_components/ton-connect-button";
 import { auth } from "~/server/auth";
 import { api, HydrateClient } from "~/trpc/server";
 
@@ -58,6 +59,14 @@ export default async function Home() {
               >
                 {session ? "Sign out" : "Sign in"}
               </Link>
+            </div>
+            
+            {/* TON Connect Integration */}
+            <div className="mt-8 p-6 bg-white/10 rounded-xl w-full max-w-md">
+              <h2 className="text-2xl font-bold mb-4 text-center">TON Wallet Connection</h2>
+              <div className="flex justify-center">
+                <TonConnectButton />
+              </div>
             </div>
           </div>
 
