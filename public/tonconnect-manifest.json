@@ -1,7 +1,7 @@
 {
-  "url": "https://yourdomain.com",
-  "name": "Your App Name",
-  "iconUrl": "https://yourdomain.com/icon.png",
-  "termsOfUseUrl": "https://yourdomain.com/terms",
-  "privacyPolicyUrl": "https://yourdomain.com/privacy"
+  "url": "http://localhost:3000",
+  "name": "Next.js TON Connect App",
+  "iconUrl": "http://localhost:3000/icon.png",
+  "termsOfUseUrl": "http://localhost:3000/terms",
+  "privacyPolicyUrl": "http://localhost:3000/privacy"
 }

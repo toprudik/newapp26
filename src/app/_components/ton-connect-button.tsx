@@ -10,12 +10,12 @@ export function TonConnectButton() {
   const [walletAddress, setWalletAddress] = useState('');
 
   useEffect(() => {
-    // Subscribe to wallet connection status
-    const unsubscribe = tonConnectUI.connectionStatus.on((status) => {
-      if (status?.wallet) {
+    // Subscribe to wallet connection status using the correct API
+    const unsubscribe = tonConnectUI.onStatusChange(wallet => {
+      if (wallet) {
         setIsConnected(true);
-        setWalletAddress(status.wallet.address);
-        console.log('Connected to wallet:', status.wallet);
+        setWalletAddress(wallet.account.address);
+        console.log('Connected to wallet:', wallet);
       } else {
         setIsConnected(false);
         setWalletAddress('');
@@ -23,7 +23,7 @@ export function TonConnectButton() {
       }
     });
 
-    return () => unsubscribe();
+    return () => unsubscribe && unsubscribe();
   }, [tonConnectUI]);
 
   const handleConnect = async () => {

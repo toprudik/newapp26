@@ -8,8 +8,8 @@ interface Props {
 }
 
 export function TonConnectProviderWrapper({ children }: Props) {
-  // Replace with your actual manifest URL
-  const manifestUrl = process.env.NEXT_PUBLIC_TON_MANIFEST_URL || 'https://yourdomain.com/tonconnect-manifest.json';
+  // Using the manifest file in the public directory
+  const manifestUrl = '/tonconnect-manifest.json';
 
   return (
     <TonConnectUIProvider manifestUrl={manifestUrl}>
