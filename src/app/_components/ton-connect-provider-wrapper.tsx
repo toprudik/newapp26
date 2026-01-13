@@ -9,7 +9,7 @@ interface Props {
 
 export function TonConnectProviderWrapper({ children }: Props) {
   // Using the manifest file in the public directory
-  const manifestUrl = '/tonconnect-manifest.json';
+  const manifestUrl = 'https://raw.githubusercontent.com/Ton-Split/tonconnect-manifest/refs/heads/main/tonconnect-manifest.json';
 
   return (
     <TonConnectUIProvider manifestUrl={manifestUrl}>

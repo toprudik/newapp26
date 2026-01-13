@@ -1,7 +1,7 @@
 {
-  "url": "http://localhost:3000",
-  "name": "Next.js TON Connect App",
-  "iconUrl": "http://localhost:3000/icon.png",
-  "termsOfUseUrl": "http://localhost:3000/terms",
-  "privacyPolicyUrl": "http://localhost:3000/privacy"
+  "url": "https://split-front-teal.vercel.app/",
+  "name": "Split!",
+  "iconUrl": "https://raw.githubusercontent.com/Ton-Split/tonconnect-manifest/main/split_logo.png",
+  "termsOfUseUrl": "https://ton-connect.github.io/demo-dapp-with-backend/terms-of-use.txt",
+  "privacyPolicyUrl": "https://ton-connect.github.io/demo-dapp-with-backend/privacy-policy.txt"
 }
